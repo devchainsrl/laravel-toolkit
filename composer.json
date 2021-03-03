@@ -1,0 +1,13 @@
+{
+    "name": "devchain/laravel-toolkit",
+    "description": "Toolkit made for DEV CHAIN SRL clients",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gabi DJ",
+            "email": "git@gabisuciu.ro"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
