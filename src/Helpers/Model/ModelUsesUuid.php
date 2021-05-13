@@ -1,5 +1,7 @@
 <?php
 
+namespace Devchain\LaravelToolkit\Helpers\Model;
+
 use Illuminate\Support\Str;
 
 /**
