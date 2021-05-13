@@ -8,6 +8,11 @@
             "email": "git@gabisuciu.ro"
         }
     ],
+    "autoload": {
+        "psr-4": {"Devchain\\LaravelToolkit\\": "src/"}
+    },
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "devchainsrl/phpcs-phpcbf-git-pre-commit": "dev-master"
+    }
 }
