@@ -14,5 +14,10 @@
     "minimum-stability": "stable",
     "require": {
         "devchainsrl/phpcs-phpcbf-git-pre-commit": "dev-master"
+    },
+    "scripts": {
+        "install-hooks": ["sh ./vendor/devchainsrl/phpcs-phpcbf-git-pre-commit/src/setup.sh"],
+        "post-install-cmd": ["@install-hooks"],
+        "post-update-cmd": ["@install-hooks"]
     }
 }
