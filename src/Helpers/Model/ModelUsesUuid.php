@@ -7,7 +7,6 @@ use Illuminate\Support\Str;
  * Date: 13.05.2021
  * Time: 18:16
  */
-
 trait ModelUsesUuid
 {
     protected static function bootModelUsesUuid()
