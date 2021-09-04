@@ -18,6 +18,13 @@ trait ModelUsesUuid
                 $model->{$model->getKeyName()} = (string)Str::uuid();
             }
         });
+        
+        /* fix for upsert() operation with uniqueBy different than primary key */
+        static::saving(function ($model) {
+            if (!$model->getKey()) {
+                $model->{$model->getKeyName()} = $model->{$model->getKeyName()} ?? (string)Str::uuid();
+            }
+        });
     }
 
     public function getIncrementing()
